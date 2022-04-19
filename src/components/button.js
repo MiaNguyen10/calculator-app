@@ -5,7 +5,7 @@ const Button = (props) => {
 
     
     return (
-        <input type='button' value={props.label} onClick={props.handleClick} />
+        <input type='button' value={props.label} onClick={props.onClick} />
     );
 };
 

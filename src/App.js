@@ -10,7 +10,6 @@ function App() {
 
   function handleClick(event) {
     // get the value from the target element (button)
-    console.log("1");
     const value = event.target.value;
     console.log(value);
 
@@ -46,7 +45,7 @@ function App() {
       }
 
       default: {
-        setQuestion(...question, value);
+        setQuestion(question.concat(value));
         break;
       }
     }
